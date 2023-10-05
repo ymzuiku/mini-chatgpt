@@ -20,3 +20,15 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #ffffff;
 }
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; /* 初始状态完全透明 */
+  }
+  50% {
+    opacity: 1; /* 50%时完全不透明，淡入效果 */
+  }
+  100% {
+    opacity: 0; /* 结束时完全透明，淡出效果 */
+  }
+}
