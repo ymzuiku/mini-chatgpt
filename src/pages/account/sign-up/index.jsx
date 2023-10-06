@@ -28,11 +28,14 @@ export default function SignUp() {
       </div>
       <div className="flex-1"></div>
       <div className="mb-4">
-        <Link href="/none" className="cursor-pointer mr-2 text-primary">
+        <Link href="/terms" className="cursor-pointer mr-2 text-primary">
           Terms of use
         </Link>
         |
-        <Link href="/none" className="cursor-pointer ml-2 text-primary">
+        <Link
+          href="/terms/privacy"
+          className="cursor-pointer ml-2 text-primary"
+        >
           Privacy policy
         </Link>
       </div>
