@@ -44,7 +44,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex-1 flex flex-col items-center justify-center min-h-screen relative pb-32">
+      <div className="flex-1 xl:flex-shrink-0 xl:max-w-screen-sm xl:w-full flex flex-col items-center justify-center min-h-screen relative pb-32">
         <div className="sm:hidden flex flex-row items-center p-8 absolute left-0 top-0">
           <h1 className="font-bold text-2xl">ChatGPT</h1>
           <span className="inline-block w-6 h-6 bg-black ml-2 rounded-full"></span>
