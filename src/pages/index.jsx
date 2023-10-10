@@ -52,8 +52,7 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center gap-4 w-full p-10">
           <h2 className="text-3xl sm:text-5xl font-bold mb-4">Get started</h2>
           <div className="w-full flex flex-col lg:flex-row gap-3">
-            <AButton href="/account/login">Login</AButton>
-            <AButton href="/account/sign-up">Sign up</AButton>
+            <AButton href="/account/login">Login or Sign up</AButton>
           </div>
         </div>
         <div className="flex flex-row gap-2 items-center absolute bottom-6">
