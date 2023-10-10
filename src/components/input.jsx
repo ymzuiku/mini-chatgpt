@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 export function Input({ placeholder, className, value, onChange }) {
   const [_focus, setFocus] = useState(false);
   const [subValue, setSubValue] = useState(value || "");
-  const focus = _focus || subValue.length;
+  const focus = value || _focus || subValue.length;
   return (
     <div
       className={twMerge(
