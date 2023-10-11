@@ -10,13 +10,25 @@ export default function Login() {
   const [_error, setError] = useState("");
   const error = email ? _error : "";
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     if (!isEmail(email)) {
       setError("Email is valid");
       return;
     }
+
+    const res = await fetch("/api/login", {
+      method: "POST",
+      body: JSON.stringify({
+        email,
+      }),
+      headers: {
+        "content-type": "application/json",
+      },
+    }).then((v) => v.json());
+
+    console.log("--debug--res", res);
   };
 
   return (
